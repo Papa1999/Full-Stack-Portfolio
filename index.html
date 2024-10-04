@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>P9's Portfolio</title>
-    <!-- <link rel=" icon" href="./assets/favicon.jpg" type="image/x-icon"> -->
   </head>
-  <body class="bg-[#A9A9A9]">
+  <body class="bg-[#000235]">
     <header
-      class="h-28 max-w-5xl m-auto rounded-md bg-[#989898] mt-5 flex justify-between items-center"
+      class="h-28 max-w-5xl m-auto rounded-md  mt-5 flex justify-between items-center max-[1030px]:max-w-[910px] max-[910px]:max-w-[750px] max-md:max-w-[650
+    px] max-sm:w-3/4 max-sm:h-[62px] font-mono"
     >
-      <div>
+      <div >
         <img
           src="./assets/logo.png"
           alt="logo"
-          width="151px"
-          height="112px"
-          class="rounded-md"
+          width="54.31px"
+          height="40px"
+          class="rounded-md "
         />
       </div>
-      <ul class="flex flex-1 justify-center itemes-center gap-12">
-        <li class="font-bold text-xl " ><a href="#" class="hover:text-[#9D06D2]">Home</a></li>
-        <li class="font-bold text-xl "><a href="#Skills" class="hover:text-[#9D06D2]">Skills</a></li>
-        <li class="font-bold text-xl "><a href="#Projects" class="hover:text-[#9D06D2]">Project</a></li>
+      <ul class="flex flex-1 justify-center itemes-center gap-12 max-sm:hidden ">
+        <li class="font-bold text-xl text-[#FFFFFF] " ><a href="#" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8 ">Home</a></li>
+        <li class="font-bold text-xl text-[#FFFFFF] "><a href="#Skills" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8">Skills</a></li>
+        <li class="font-bold text-xl text-[#FFFFFF]"><a href="#Projects" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8">Project</a></li>
       </ul>
-      <div>
+      <div width="32px" height="32px" class="bg-[#FFFFFF] rounded-lg">
         <a href="">
           <img
             src="./assets/github.png"
             alt="Github"
-            width="84px"
-            height="84px"
+            width="32px"
+            height="32px"
           />
         </a>
       </div>
     </header>
 
-    <section id="Home" class="max-w-5xl m-auto mt-10 flex justify-between">
-      <div class="flex flex-col justify-center flex-1">
-        <h2 class="font-bold text-3xl">About me</h2>
-        <p class="text-2xl text-[#333333] pt-[30px] max-w-[400px]">
-          Hey i’m <span class="text-[#9D06D2]">Macoumba </span>👋 a young men
-          who is <span class="text-[#9D06D2]">passionnate </span> about
+    <section id="Home" class="max-w-5xl m-auto mt-10 flex justify-between max-[1030px]:max-w-[910px] max-[910px]:max-w-[750px] max-[910px]:flex-col-reverse max-sm:w-3/4">
+      <div  class=" flex flex-col justify-center flex-1 animate-Paragraphes ">
+        <h2 id="#Paragraphes" class="font-bold text-3xl max-sm:mt-6 text-[#ABD9D9] font-sans">About Me</h2>
+        <p class="text-2xl text-[#333333] pt-[30px] max-w-[400px] max-[910px]:max-w-full text-justify text-[#FFFFFF] opacity-70 font-mono">
+          Welcome i’m <span class="text-[#8D8DDA]">Macoumba</span>👋 a young
+          who is <span class="text-[#8D8DDA] ">passionnate</span> about
         </p>
-        <h1 class="text-[#9D06D2] font-bold text-4xl">
+        <h1 class="text-[#FFFFFF] font-bold text-4xl font-mono">
           &lt;&gt; Web Development &lt;/&gt;
         </h1>
         <div class="flex gap-3 justify-center items-center pt-[30px]">
           <div class="w-[36px] h-[36px] rounded-full bg-white text-white flex justify-center items-center">
-            <a href="" class="bg-black rounded-full p-[4px] font-bold"> CV</a>
+            <a href="./assets/Cv.pdf" target="_blank" class="bg-black rounded-full p-[4px] font-bold text-[#FFFFFF]"> CV</a>
           </div>
           <div>
-            <a href="">
+            <a href="https://fr.linkedin.com/in/papamacoumbathioube" target="_blank">
             <img
               src="./assets/linkedin.png"
               alt="Linkedin"
@@ -63,80 +64,80 @@
         </div>
       </div>
       <div
-        class="border border-[#9D06D2] rounded-[211px] h-[450px] w-[450px] flex justify-center items-center"
+        class="border border-[#ABD9D9] rounded-[211px] h-[450px] w-[450px] flex justify-center items-center max-[910px]:self-center max-sm:w-[300px] max-sm:h-[300px]"
       >
         <img
           src="./assets/profile.png"
           alt="Profil Picture"
-          class="grow-0 w-[344px] h-[344px]"
+          class="grow-0 w-[344px] h-[344px] max-sm:w-[250px] max-sm:h-[250px] "
         />
       </div>
     </section>
-    <section id="Skills" class="max-w-5xl m-auto mt-10">
-      <h2 class="font-bold text-3xl">Skills</h2>
-      <p class="text-2xl text-[#333333] pt-[30px]">
-        With a strong foundation in
-        <span class="text-[#9D06D2]">{ javascript } </span>, i have a the
-        ability to develop web applications using the following tools.
+    <section id="Skills" class="max-w-5xl m-auto mt-10 max-[1030px]:max-w-[910px] max-[910px]:max-w-[750px] max-sm:w-3/4 ">
+      <h2 class="font-bold text-3xl text-[#ABD9D9] font-sans">Skills</h2>
+      <p class="text-2xl text-[#333333] pt-[30px] text-justify font-mono text-[#FFFFFF] opacity-70">
+        With a strong foundation in 
+        <span class="text-[#8D8DDA]"> { javascript } </span>, i have a the
+        ability to develop web applications using theses following tools.
       </p>
       <div >
         <div class=" max-w-5xl m-auto mt-5 ">
-            <div class="flex justify-between">
-                <div class="flex justify-center items-center max-w-[458px] flex-1 bg-[#989898] rounded-lg">
-                    <p class="text-4xl font-bold text-[#9D06D2]">FRONT-END</p> 
+            <div class="flex justify-between max-sm:hidden">
+                <div class="flex justify-center items-center max-w-[458px] flex-1  rounded-lg">
+                    <p class="text-3xl font-bold text-[#FFFFFF] font-mono">FRONT-END</p> 
                 </div>
-                <div class="flex justify-center items-center max-w-[458px] flex-1 bg-[#989898] rounded-lg">
-                    <p class="text-4xl font-bold text-[#9D06D2]">BACK-END</p>
+                <div class="flex justify-center items-center max-w-[458px] flex-1  rounded-lg">
+                    <p class="text-3xl font-bold text-[#FFFFFF] font-mono">BACK-END</p>
                 </div>
             </div>
-            <div class="grid grid-rows-4 grid-cols-7 pt-4">
-                <div class="flex justify-between col-start-3 my-2 col-end-6 bg-[#989898] rounded-[10px]">
+            <div class="grid grid-rows-4 grid-cols-7 pt-4 max-sm:flex max-sm:flex-col">
+                <div class="flex justify-between col-start-3 my-2 col-end-6 bg-[#FFFFFF]/10 rounded-[10px] max-sm:width-1/2">
                     <img src="./assets/javascript.png" alt="icon" class="h-[100px] w-[73.79px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">Javascript</h4>
-                        <p class="text-xl text-[#333333]"> Full-Stack </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF]">Javascript</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70"> Full-Stack </p>
                     </div>
                 </div>
-                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#989898] rounded-[10px]">
+                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#FFFFFF]/10 rounded-[10px]">
                     <img src="./assets/figma.png" alt="icon" class="h-[100px] w-[100px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">Figma</h4>
-                        <p class="text-xl text-[#333333]"> Web Design </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF] ">Figma</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> Web Design </p>
                     </div>
                 </div>
-                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#989898] rounded-[10px]">
+                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#FFFFFF]/10 rounded-[10px]">
                     <img src="./assets/react.png" alt="icon" class="h-[100px] w-[100px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">React JS</h4>
-                        <p class="text-xl text-[#333333]"> UI development </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF]">React JS</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> UI development </p>
                     </div>
                 </div>
-                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#989898] rounded-[10px]">
+                <div class="flex justify-between col-start-1 my-2 col-end-4 bg-[#FFFFFF]/10 rounded-[10px]">
                     <img src="./assets/tailwind.png" alt="icon" class="h-[100px] w-[86.54px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">Tailwind CSS</h4>
-                        <p class="text-xl text-[#333333]"> UI development </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF]">Tailwind CSS</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> UI development </p>
                     </div>
                 </div>
-                <div class="flex justify-between col-start-5 my-2 col-end-8 row-start-2  bg-[#989898] rounded-[10px]">
+                <div class="flex justify-between col-start-5 my-2 col-end-8 row-start-2  bg-[#FFFFFF]/10 rounded-[10px]">
                     <img src="./assets/express.png" alt="icon" class="h-[100px] w-[86.54px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">Express JS</h4>
-                        <p class="text-xl text-[#333333]"> API development </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF]">Express JS</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> API development </p>
                     </div>
                 </div>
-                <div class="flex justify-between  col-start-5 my-2 col-end-8 bg-[#989898] row-start-3 rounded-[10px]">
+                <div class="flex justify-between  col-start-5 my-2 col-end-8 bg-[#FFFFFF]/10 row-start-3 rounded-[10px]">
                     <img src="./assets/mysql.png" alt="icon" class="h-[100px] w-[86.54px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">MySQL</h4>
-                        <p class="text-xl text-[#333333]"> Data Base  </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF]">MySQL</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> Data Base  </p>
                     </div>
                 </div>
-                <div class="flex justify-between col-start-5 my-2 col-end-8 bg-[#989898] row-start-4 rounded-[10px]">
+                <div class="flex justify-between col-start-5 my-2 col-end-8 bg-[#FFFFFF]/10 row-start-4 rounded-[10px]">
                     <img src="./assets/mongodb.png" alt="icon" class="h-[100px] w-[85.19px] rounded-[10px]">
                     <div class="flex flex-col  justify-around items-center flex-1 ">
-                        <h4 class="font-bold text-2xl text-[#1C1C1C]">Mongo DB</h4>
-                        <p class="text-xl text-[#333333]"> Data Base  </p>
+                        <h4 class="font-bold text-2xl text-[#FFFFFF] ">Mongo DB</h4>
+                        <p class="text-xl text-[#FFFFFF] opacity-70 font-mono"> Data Base  </p>
                     </div>
                 </div>
 
@@ -144,55 +145,59 @@
         </div>
       </div>
     </section>
-    <section id="Projects"  class="max-w-5xl m-auto mt-10">
-        <h2 class="font-bold text-3xl">Projects</h2>
-        <p class="text-2xl text-[#333333] pt-[30px]">
-            You can see some of my  project from my  <span class="text-[#9D06D2]">{ github }</span>  account . 
+    <section id="Projects"  class="max-w-5xl m-auto mt-10 max-[1030px]:max-w-[910px] max-[910px]:max-w-[750px] max-sm:w-3/4">
+        <h2 class="font-bold text-3xl text-[#ABD9D9] font-sans">Projects</h2>
+        <p class="text-2xl text-[#333333] pt-[30px] font-mono text-justify text-[#FFFFFF] opacity-70">
+            You can see some of my  project from my  <span class="text-[#8D8DDA]">{ github }</span>  account . 
         </p>
-        <div class="flex justify-between pt-[30px]">
-            <div class="flex flex-col justify-between items-center bg-[#989898] max-w-[300px] rounded-lg pb-4">
+        <div class="flex justify-between pt-[30px] max-[910px]:flex-col max-[910px]:items-center">
+            <div class="flex flex-col justify-between items-center bg-[#FFFFFF]/10 max-w-[300px] rounded-lg pb-4 max-[910px]:mb-8 ">
                 <div class="h-[270px] w-[270px]">
                     <img src="./assets/nike.png" alt="Nike" class="object-contain"  >
                 </div>
-                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px]">Nike</h3>
-                <button class="bg-white rounded-3xl py-2  px-4 font-semibold text-[#333333]">See The Project</button>
+                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px] text-[#FFFFFF] font-sans">Nike</h3>
+                <button class="border border-[#8D8DDA] bg-[#8D8DDA] rounded-3xl py-3  px-8 text-[#FFFFFF] hover:opacity-70 text-[#8D8DDA] font-mono uppercase text-[15px] tracking-wide">See The Project</button>
             </div>
-            <div class="flex flex-col justify-between items-center bg-[#989898] max-w-[300px] rounded-lg pb-4">
+            <div class="flex flex-col justify-between items-center bg-[#FFFFFF]/10 max-w-[300px] rounded-lg pb-4 max-[910px]:mb-8">
                 <div class="h-[270px] w-[270px]">
                     <img src="./assets/robbie.png" alt="Nike" class="object-contain" >
                 </div>
-                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px]">Robbie Lens</h3>
-                <button class="bg-white rounded-3xl py-2 px-4 font-semibold text-[#333333]">See The Project</button>
+                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px] text-[#FFFFFF] font-sans">Robbie Lens</h3>
+                <button class=" bg-[#8D8DDA] rounded-3xl py-3 px-8 text-[#333333] text-[#FFFFFF] font-mono hover:opacity-70 uppercase text-[15px] tracking-wide">See The Project</button>
             </div>
-            <div class="flex flex-col justify-between items-center bg-[#989898] max-w-[300px] rounded-lg pb-4">
+            <div class="flex flex-col justify-between items-center bg-[#FFFFFF]/10 max-w-[300px] rounded-lg pb-4 max-[910px]:mb-8">
                 <div class="h-[270px] w-[270px]">
                     <img src="./assets/clock.png" alt="Nike" class="object-contain" >
                 </div>
-                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px]">Digital Clock</h3>
-                <button class="bg-white rounded-3xl py-2 px-4 font-semibold text-[#333333]">See The Project</button>
+                <h3 class="font-bold text-[28px] pt-[15px] pb-[10px] text-[#FFFFFF] font-sans">Digital Clock</h3>
+                <button class=" bg-[#8D8DDA] rounded-3xl py-3 px-8 text-[#FFFFFF] text-[15px] font-mono hover:opacity-70 uppercase tracking-wide">See The Project</button>
             </div>
             
         </div>
 
     </section>
-    <section id="Contact"  class="max-w-5xl m-auto mt-10">
-        <h2 class="font-bold text-3xl">Get in Touch</h2>
-        <p class="text-2xl text-[#333333] pt-[30px]">
-            You can send me an <span class="text-[#9D06D2]"> { email } </span>, just by clicking the link bellow.  
+    <section id="Contact"  class="max-w-5xl m-auto mt-10 max-[1030px]:max-w-[910px] max-[910px]:max-w-[750px] max-sm:w-3/4">
+        <h2 class="font-bold text-3xl text-[#ABD9D9] font-sans">Get In Touch</h2>
+        <p class="text-2xl text-[#FFFFFF] pt-[30px] text-[#000000] opacity-70 font-mono">
+            You can send me an <span class="text-[#8D8DDA]"> { email } </span>, just by clicking the link bellow.  
         </p>
-        <div>
-            <div class="flex justify-center gap-8 items-center py-[118px]">
-                <div><a href=""><img src="./assets/email.png" alt="email" width="84px" height="84px"></a></div>
-                <div><a href="" class="text-2xl text-[#333333] hover:text-[#9D06D2]"> Send me an email</a></div>
+        <div class="bg-gradient-to-br from-[#5151C6] to-[#ABD9D9] rounded-3xl mt-5 w-3/4 m-auto h-[250px]">
+          <div class="flex flex-col justify-center gap-8 h-full items-center">
+            <h1 class="text-[#FFFFFF] font-bold text-4xl font-mono max-sm:text-2xl">
+              Send Me an email
+            </h1>
+            <div class="flex justify-center gap-8 items-center max-[1030px]:gap-2">
+                <div><button href="mailto:macoumbathioub@icloud.com" class="text-lg text-[#FFFFFF] font-sans bg-black px-8 py-3 rounded-full uppercase tracking-wider hover:opacity-70"> Here</button></div>
             </div>
+          </div>
         </div>
     </section>
-    <footer class="max-w-5xl m-auto mt-10 w-[544px] h-[75px] bg-[#989898] flex justify-center items-center rounded-[30px] mb-2">
+    <footer class="max-w-5xl m-auto mt-10 h-[75px] flex justify-center items-center rounded-[30px] mb-2 max-sm:w-3/4 font-mono">
         
             <ul class="flex justify-center items-center gap-12">
-                <li class="font-bold text-xl "><a href="#Home" class="hover:text-[#9D06D2]">Profil</a></li>
-                <li class="font-bold text-xl "><a href="#Skills" class="hover:text-[#9D06D2]">Skills</a></li>
-                <li class="font-bold text-xl "><a href="#Projects" class="hover:text-[#9D06D2]">Projects</a></li>
+                <li class="font-bold text-xl text-[#FFFFFF] "><a href="#Home" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8">Profil</a></li>
+                <li class="font-bold text-xl text-[#FFFFFF]"><a href="#Skills" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8">Skills</a></li>
+                <li class="font-bold text-xl text-[#FFFFFF]"><a href="#Projects" class="hover:text-[#8D8DDA] transition ease-in delay-200 hover:underline hover:decoration-2 hover:underline-offset-8">Projects</a></li>
             </ul>
         
     </footer>
